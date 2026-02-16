@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>💰 Crypto Market Dashboard</h1>
+
+        <!-- Dark/Light button -->
+        <button id="themeBtn">🌙 Dark / Light</button>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input type="text" id="cryptoInput" placeholder="Ex: bitcoin">
+            <button id="searchBtn">Rechercher</button>
+        </div>
+
+        <!-- Top Coins -->
+        <div id="topCoins" class="top-coins"></div>
+
+        <!-- Infos -->
+        <div class="card">
+            <h2 id="name">Nom : --</h2>
+            <p>💵 Prix : <span id="price">--</span></p>
+            <p>📈 Variation 24h : <span id="change">--</span></p>
+            <p>🏆 Market Cap : <span id="marketcap">--</span></p>
+        </div>
+
+        <!-- Graphique -->
+        <div class="chart-container">
+            <canvas id="priceChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

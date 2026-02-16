@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#themeBtn {
+    margin-bottom: 15px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.card {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    background: #161b22;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* Top coins */
+.top-coins {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.coin-btn {
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #21262d;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Light mode */
+body.light {
+    background: #f2f2f2;
+    color: #111;
+}
+
+body.light .card,
+body.light .chart-container,
+body.light .coin-btn {
+    background: white;
+    color: black;
+}
