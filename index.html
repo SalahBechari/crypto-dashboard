@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crypto Dashboard</title>
+    <title>Crypto Market Dashboard</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Chart.js -->
@@ -15,32 +16,44 @@
     <div class="container">
         <h1>💰 Crypto Market Dashboard</h1>
 
-        <!-- Dark/Light button -->
+        <!-- Dark / Light mode -->
         <button id="themeBtn">🌙 Dark / Light</button>
 
-        <!-- Search -->
+        <!-- Search + Currency -->
         <div class="search-box">
-            <input type="text" id="cryptoInput" placeholder="Ex: bitcoin">
+            <input 
+                type="text" 
+                id="cryptoInput" 
+                placeholder="Ex: bitcoin, btc, eth, usdt..."
+            >
+
+            <select id="currencySelect">
+                <option value="usd">USD ($)</option>
+                <option value="eur">EUR (€)</option>
+                <option value="mad">MAD (DH)</option>
+            </select>
+
             <button id="searchBtn">Rechercher</button>
         </div>
 
         <!-- Top Coins -->
         <div id="topCoins" class="top-coins"></div>
 
-        <!-- Infos -->
+        <!-- Infos Card -->
         <div class="card">
             <h2 id="name">Nom : --</h2>
-            <p>💵 Prix : <span id="price">--</span></p>
-            <p>📈 Variation 24h : <span id="change">--</span></p>
-            <p>🏆 Market Cap : <span id="marketcap">--</span></p>
+            <p>💰 <strong>Prix :</strong> <span id="price">--</span></p>
+            <p>📈 <strong>Variation 24h :</strong> <span id="change">--</span></p>
+            <p>🏆 <strong>Market Cap :</strong> <span id="marketcap">--</span></p>
         </div>
 
-        <!-- Graphique -->
+        <!-- Chart -->
         <div class="chart-container">
             <canvas id="priceChart"></canvas>
         </div>
     </div>
 
+    <!-- JS -->
     <script src="script.js"></script>
 </body>
 </html>
